@@ -3,14 +3,18 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-
+import * as $Slides_Component from "./islands/Slides/Component.tsx";
+import * as $Slides_Slides from "./islands/Slides/Slides.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
   },
-  islands: {},
+  islands: {
+    "./islands/Slides/Component.tsx": $Slides_Component,
+    "./islands/Slides/Slides.tsx": $Slides_Slides,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 
