@@ -27,7 +27,7 @@ export default function Component({ slides }: Props) {
 
   return (
     <>
-      <div class="relative w-full max-w-5xl mx-auto">
+      <div class="relative w-full">
         <div className="z-10 absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3">
           <a
             className="btn btn-ghost text-warning text-2xl"
@@ -54,7 +54,7 @@ export default function Component({ slides }: Props) {
               id={"slide" + index}
               className="carousel-item relative w-full"
             >
-              <div class="flex justify-around items-center w-full max-w-4xl mx-auto">
+              <div class="flex justify-around items-center w-full px-10">
                 {images.map((image) => (
                   <img
                     src={image.image}
