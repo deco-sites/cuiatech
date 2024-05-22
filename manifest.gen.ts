@@ -18,6 +18,7 @@ import * as $$$$$$7 from "./sections/ImageWithParagraph.tsx";
 import * as $$$$$$8 from "./sections/Logos.tsx";
 import * as $$$$$$9 from "./sections/Testimonials.tsx";
 import * as $$$$$$10 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$10 from "./sections/VideoSection.tsx";
 
 const manifest = {
   "sections": {
