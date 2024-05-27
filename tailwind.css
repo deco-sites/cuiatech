@@ -50,3 +50,21 @@
     display: none;
   }
 }
+
+.cuia-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.cuia-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cuia-scrollbar::-webkit-scrollbar-thumb {
+  background: #b4b6b8;
+  border-radius: 4px;
+}
+
+.cuia-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #dee0e0;
+}
