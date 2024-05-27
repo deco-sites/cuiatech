@@ -15,7 +15,7 @@ const scrollToSlide = (index: number, sig: Signal) => {
   return (event: Event) => {
     sig.value = index;
     event?.preventDefault();
-    document.querySelector(`#slide${index}`)?.scrollIntoView({
+    document.querySelector(`#slide-oc${index}`)?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
     });
@@ -51,7 +51,7 @@ export default function Component({ slides }: Props) {
         <div className="carousel w-full">
           {slides.map((images, index) => (
             <div
-              id={"slide" + index}
+              id={"slide-oc" + index}
               className="carousel-item relative w-full"
             >
               <div class="flex justify-around items-center w-full px-10">
