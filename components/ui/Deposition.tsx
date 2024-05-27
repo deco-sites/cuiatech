@@ -1,7 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { useSignal } from "@preact/signals";
 
-export interface Props {
+export interface Deposition {
   /**
    * @format textarea
    */
@@ -21,7 +21,7 @@ const COLORS_CONTENT = {
 };
 
 export default function Deposition(
-  { description, image, color = "primary" }: Props,
+  { description, image, color = "primary" }: Deposition,
 ) {
   const isExpanded = useSignal(false);
   return (

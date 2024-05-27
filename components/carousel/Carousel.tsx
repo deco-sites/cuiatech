@@ -1,8 +1,11 @@
 import Deposition, {
-  Props as DepositionsProps,
+  Deposition as DepositionsProps,
 } from "site/components/ui/Deposition.tsx";
 
 export interface Props {
+  /**
+   * @title Depositions
+   */
   depositions: DepositionsProps[];
 }
 
