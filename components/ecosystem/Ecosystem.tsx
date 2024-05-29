@@ -3,7 +3,7 @@ import Map from "./Map.tsx";
 export interface Props {
   selectedStates?: string[];
   numberOfProjects?: string;
-  numberOfProfessionals?: string;
+  numberOfImpactatedPeoples?: string;
   /** @format html */
   headquarters?: string;
 }
@@ -12,7 +12,7 @@ export default function Ecosystem(
   {
     selectedStates,
     numberOfProjects = "+",
-    numberOfProfessionals = "+",
+    numberOfImpactatedPeoples = "+",
     headquarters,
   }: Props,
 ) {
@@ -32,16 +32,16 @@ export default function Ecosystem(
               <span class="text-info text-3xl sm:text-5xl font-semibold">
                 {numberOfProjects || "+"}
               </span>
-              <p class="text-center text-primary-500 font-semibold text-sm sm:text:2xl">
+              <p class="text-center text-secondary-content font-semibold text-sm sm:text:2xl">
                 Projetos executados
               </p>
             </div>
             <div class="flex flex-col aspect-square gap-1 rounded-full justify-center items-center  w-32 h-32 sm:w-44 p-6 sm:h-44 bg-gray-200">
               <span class="text-info text-3xl sm:text-5xl font-semibold">
-                {numberOfProfessionals || "+"}
+                {numberOfImpactatedPeoples || "+"}
               </span>
-              <p class="text-center text-primary-500 font-semibold text-sm sm:text:2xl">
-                Novos profissionais engajados
+              <p class="text-center text-secondary-content font-semibold text-sm sm:text:2xl">
+                Pessoas impactadas
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Ecosystem(
                 Sedes
               </h5>
               <div
-                class="text-primary-500"
+                class="text-secondary-content"
                 dangerouslySetInnerHTML={{ __html: headquarters }}
               />
             </div>
