@@ -4,6 +4,8 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $Carousel from "./islands/Carousel.tsx";
+import * as $MainSlider_Component from "./islands/MainSlider/Component.tsx";
+import * as $MainSlider_MainSlider from "./islands/MainSlider/MainSlider.tsx";
 import * as $Slides_Component from "./islands/Slides/Component.tsx";
 import * as $Slides_Slides from "./islands/Slides/Slides.tsx";
 import * as $SolutionsSlider_Component from "./islands/SolutionsSlider/Component.tsx";
@@ -16,6 +18,8 @@ const manifest = {
   },
   islands: {
     "./islands/Carousel.tsx": $Carousel,
+    "./islands/MainSlider/Component.tsx": $MainSlider_Component,
+    "./islands/MainSlider/MainSlider.tsx": $MainSlider_MainSlider,
     "./islands/Slides/Component.tsx": $Slides_Component,
     "./islands/Slides/Slides.tsx": $Slides_Slides,
     "./islands/SolutionsSlider/Component.tsx": $SolutionsSlider_Component,
