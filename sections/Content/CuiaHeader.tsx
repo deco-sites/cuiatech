@@ -4,7 +4,7 @@ import Button from "site/components/ui/Button.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 
 interface Logo {
-  src: ImageWidget;
+  src: "LogoCuia" | "LogoCuia";
   alt: string;
   width?: number;
   height?: number;
@@ -12,7 +12,7 @@ interface Logo {
 
 interface Props {
   navItems?: SiteNavigationElement[] | null;
-  logo?: Logo;
+  logo: Logo;
   iconButtons?: {
     icon: "Instagram" | "WhatsApp" | "Linkedin" | "Message";
     url: string;
@@ -60,11 +60,11 @@ function CuiaHeader({
     },
     {
       icon: "Instagram",
-      url: "https://www.instagram.com/pbhubsolucoes/",
+      url: "https://www.instagram.com/cuia.tech?igsh=N2plMXhwb3dpbzdt",
     },
     {
       icon: "Linkedin",
-      url: "https://www.linkedin.com/company/pbhubsolucoes",
+      url: "https://www.linkedin.com/company/cuiatech/about/?viewAsMember=true",
     },
     {
       icon: "Message",
@@ -75,12 +75,12 @@ function CuiaHeader({
   return (
     <header class="max-h-[140px] w-full flex items-center justify-center p-4 ">
       <div class="w-[90%] flex justify-center items-center">
-        <img
-          src={logo?.src}
-          class="h-[76px] w-[150px]"
-          alt={logo?.alt}
-          width={logo?.width}
-          height={logo?.height}
+        <Icon
+          id={logo.src}
+          alt={logo.alt}
+          size={logo.width}
+          strokeWidth={0.2}
+          fontWeight={600}
         />
 
         <nav class={`w-[80%] lg:flex hidden items-center justify-center ml-5`}>

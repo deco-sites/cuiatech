@@ -34,11 +34,11 @@ export default function CuiaFooter({
     },
     {
       icon: "Instagram",
-      url: "https://www.instagram.com/pbhubsolucoes/",
+      url: "https://www.instagram.com/cuia.tech?igsh=N2plMXhwb3dpbzdt",
     },
     {
       icon: "Linkedin",
-      url: "https://www.linkedin.com/company/pbhubsolucoes",
+      url: "https://www.linkedin.com/company/cuiatech/about/?viewAsMember=true",
     },
     {
       icon: "Message",
