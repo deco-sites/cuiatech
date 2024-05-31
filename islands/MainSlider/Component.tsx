@@ -21,7 +21,6 @@ export interface Props {
 }
 
 const scrollToSlide = (index: number, sig: Signal) => {
-  console.log("oioi");
   return (event: Event) => {
     sig.value = index;
     event?.preventDefault();
@@ -34,8 +33,7 @@ const scrollToSlide = (index: number, sig: Signal) => {
 
 export default function Component({ slides }: Props) {
   const current = useSignal(0);
-
-  console.log(slides.length);
+  const width = globalThis.innerWidth;
 
   return (
     <>
@@ -51,11 +49,9 @@ export default function Component({ slides }: Props) {
               <div class="flex justify-around items-center w-full mt-5 sm:mt-0 pb-2">
                 <div
                   id="image-container"
-                  class={`flex flex-col gap-4 items-center justify-center ${
-                    index === 3 ? "hidden" : "sm:flex"
-                  } last:hidden md:last:flex`}
+                  class={`flex flex-col gap-4 items-center justify-center `}
                 >
-                  <div class="md:max-w-[500px] max-w-[70px] flex flex-col flex-wrap items-center justify-center md:gap-[50px]">
+                  <div class="md:max-w-[500px] max-w-[200px] flex flex-col flex-wrap items-center justify-center gap-[50px]">
                     <img
                       src={item.firstSlide?.image}
                       width={150}
@@ -86,16 +82,22 @@ export default function Component({ slides }: Props) {
                   {item?.slideInfo?.map((image, index) => (
                     <div
                       id="image-container"
-                      class={`flex flex-col gap-4 items-center justify-center ${
+                      class={`flex flex-col gap-0 md:gap-4 items-center justify-center ${
                         index === 3 ? "hidden" : "sm:flex"
                       } last:hidden md:last:flex`}
                     >
-                      <div class="md:max-w-[160px] max-w-[70px] flex flex-col flex-wrap items-center justify-center gap-2">
-                        <img src={image.image} width={60} height={60} />
+                      <div class="md:max-w-[160px] max-w-[65px] flex flex-col flex-wrap items-center justify-center">
+                        <img
+                          src={image.image}
+                          width={width > 450 ? 60 : 45}
+                          height={width > 450 ? 60 : 45}
+                        />
 
-                        <span class="text-[16px] md:text-[20px] text-primary-content text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
-                          {image.imageDescription}
-                        </span>
+                        <div class="w-[50%] flex flex-wrap items-center justify-center mt-1 mt:gap-2">
+                          <span class="text-[14px] md:text-[20px] text-primary-content text-center font-bold leading-[16px] md:leading-[20px]">
+                            {image.imageDescription}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -122,10 +124,14 @@ export default function Component({ slides }: Props) {
                         index === 3 ? "hidden" : "sm:flex"
                       } last:hidden md:last:flex`}
                     >
-                      <div class="md:max-w-[160px] max-w-[70px] flex flex-col flex-wrap items-center justify-center gap-2">
-                        <img src={image.image} width={60} height={60} />
+                      <div class="md:max-w-[160px] max-w-[75px] flex flex-col flex-wrap items-center justify-center gap-1 md:gap-2">
+                        <img
+                          src={image.image}
+                          width={width > 450 ? 60 : 45}
+                          height={width > 450 ? 60 : 45}
+                        />
 
-                        <span class="text-[16px] md:text-[20px] text-primary-content text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
+                        <span class="text-[14px] md:text-[20px] text-primary-content text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
                           {image.imageDescription}
                         </span>
                       </div>

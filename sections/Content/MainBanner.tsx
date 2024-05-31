@@ -35,20 +35,20 @@ export default function MainBanner({
       description: "Criação de valor a partir de novos conceitos e ideias",
       slideInfo: [
         {
-          image: "/image/tecnologiesAndSolutions/mobile.png",
-          imageDescription: "Mobile",
+          image: "",
+          imageDescription: "Ideação & Discovery",
         },
         {
-          image: "/image/tecnologiesAndSolutions/web.png",
-          imageDescription: "Web Front End",
+          image: "",
+          imageDescription: "Consultorias",
         },
         {
-          image: "/image/tecnologiesAndSolutions/backend.png",
-          imageDescription: "Web Back End",
+          image: "",
+          imageDescription: "Desenvolvimento de soluções",
         },
         {
-          image: "/image/tecnologiesAndSolutions/infra.png",
-          imageDescription: "Infra",
+          image: "",
+          imageDescription: "Squad as a service",
         },
       ],
     },
