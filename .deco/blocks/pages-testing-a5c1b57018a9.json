@@ -262,6 +262,14 @@
           "url": "/"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Content/ContactForm.tsx",
+      "title": "Fale conosco",
+      "email": "ellyssonmiike@hotmail.com",
+      "config": {
+        "__resolveType": "Configuração SMTP"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
