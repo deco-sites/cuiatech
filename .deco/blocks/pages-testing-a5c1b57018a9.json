@@ -171,7 +171,7 @@
     },
     {
       "__resolveType": "site/sections/Content/Ecosystem.tsx",
-      "numberOfProjects": "+30",
+      "numberOfProjects": "+110",
       "numberOfProfessionals": "+60",
       "headquarters": "<div class=\"card\"><div class=\"sede\"><strong><span class=\"sede-title\">JP|</span></strong>&nbsp;<span class=\"sede-description\">Base operacional de software e design house</span></div><div class=\"sede\"><strong><span class=\"sede-title\">SP|</span></strong>&nbsp;<span class=\"sede-description\">Comercial e desenvolvimento de novos negócios</span></div></div>",
       "selectedStates": [
@@ -180,7 +180,8 @@
         "SP",
         "PR",
         "SC"
-      ]
+      ],
+      "numberOfImpactatedPeoples": "+800"
     },
     {
       "__resolveType": "site/sections/Content/ColaboratorsDepositions.tsx",
