@@ -231,7 +231,7 @@
     {
       "__resolveType": "site/sections/Content/ContactForm.tsx",
       "title": "Fale conosco",
-      "email": "ellyssonmiike@hotmail.com",
+      "email": "joao@cuia.tech",
       "config": {
         "__resolveType": "Configuração SMTP"
       }
