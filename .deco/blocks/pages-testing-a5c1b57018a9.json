@@ -228,6 +228,14 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Content/ContactForm.tsx",
+      "title": "Fale conosco",
+      "email": "ellyssonmiike@hotmail.com",
+      "config": {
+        "__resolveType": "Configuração SMTP"
+      }
+    },
+    {
       "__resolveType": "site/sections/Content/CuiaFooter.tsx",
       "logo": {
         "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/3e131546-87a8-4ebf-af1d-51880964dfb1",
@@ -262,14 +270,6 @@
           "url": "/"
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/Content/ContactForm.tsx",
-      "title": "Fale conosco",
-      "email": "ellyssonmiike@hotmail.com",
-      "config": {
-        "__resolveType": "Configuração SMTP"
-      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
