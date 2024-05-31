@@ -13,21 +13,22 @@ import * as $$$$$$4 from "./sections/Content/CuiaFooter.tsx";
 import * as $$$$$$5 from "./sections/Content/CuiaHeader.tsx";
 import * as $$$$$$6 from "./sections/Content/Ecosystem.tsx";
 import * as $$$$$$7 from "./sections/Content/ImagePresentation.tsx";
-import * as $$$$$$8 from "./sections/Content/OurClients.tsx";
-import * as $$$$$$9 from "./sections/Content/OurValues.tsx";
-import * as $$$$$$10 from "./sections/Content/TecnologiesAndServices.tsx";
-import * as $$$$$$11 from "./sections/Faq.tsx";
-import * as $$$$$$12 from "./sections/Footer.tsx";
-import * as $$$$$$13 from "./sections/Header.tsx";
-import * as $$$$$$20 from "./sections/hero-1.tsx";
-import * as $$$$$$21 from "./sections/hero-2.tsx";
-import * as $$$$$$14 from "./sections/Hero.tsx";
-import * as $$$$$$22 from "./sections/hero2.tsx";
-import * as $$$$$$15 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$16 from "./sections/Logos.tsx";
-import * as $$$$$$17 from "./sections/Testimonials.tsx";
-import * as $$$$$$18 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$19 from "./sections/VideoSection.tsx";
+import * as $$$$$$8 from "./sections/Content/MainBanner.tsx";
+import * as $$$$$$9 from "./sections/Content/OurClients.tsx";
+import * as $$$$$$10 from "./sections/Content/OurValues.tsx";
+import * as $$$$$$11 from "./sections/Content/TecnologiesAndServices.tsx";
+import * as $$$$$$12 from "./sections/Faq.tsx";
+import * as $$$$$$13 from "./sections/Footer.tsx";
+import * as $$$$$$14 from "./sections/Header.tsx";
+import * as $$$$$$21 from "./sections/hero-1.tsx";
+import * as $$$$$$22 from "./sections/hero-2.tsx";
+import * as $$$$$$15 from "./sections/Hero.tsx";
+import * as $$$$$$23 from "./sections/hero2.tsx";
+import * as $$$$$$16 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$17 from "./sections/Logos.tsx";
+import * as $$$$$$18 from "./sections/Testimonials.tsx";
+import * as $$$$$$19 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$20 from "./sections/VideoSection.tsx";
 
 const manifest = {
   "sections": {
@@ -39,21 +40,22 @@ const manifest = {
     "site/sections/Content/CuiaHeader.tsx": $$$$$$5,
     "site/sections/Content/Ecosystem.tsx": $$$$$$6,
     "site/sections/Content/ImagePresentation.tsx": $$$$$$7,
-    "site/sections/Content/OurClients.tsx": $$$$$$8,
-    "site/sections/Content/OurValues.tsx": $$$$$$9,
-    "site/sections/Content/TecnologiesAndServices.tsx": $$$$$$10,
-    "site/sections/Faq.tsx": $$$$$$11,
-    "site/sections/Footer.tsx": $$$$$$12,
-    "site/sections/Header.tsx": $$$$$$13,
-    "site/sections/hero-1.tsx": $$$$$$20,
-    "site/sections/hero-2.tsx": $$$$$$21,
-    "site/sections/Hero.tsx": $$$$$$14,
-    "site/sections/hero2.tsx": $$$$$$22,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$15,
-    "site/sections/Logos.tsx": $$$$$$16,
-    "site/sections/Testimonials.tsx": $$$$$$17,
-    "site/sections/Theme/Theme.tsx": $$$$$$18,
-    "site/sections/VideoSection.tsx": $$$$$$19,
+    "site/sections/Content/MainBanner.tsx": $$$$$$8,
+    "site/sections/Content/OurClients.tsx": $$$$$$9,
+    "site/sections/Content/OurValues.tsx": $$$$$$10,
+    "site/sections/Content/TecnologiesAndServices.tsx": $$$$$$11,
+    "site/sections/Faq.tsx": $$$$$$12,
+    "site/sections/Footer.tsx": $$$$$$13,
+    "site/sections/Header.tsx": $$$$$$14,
+    "site/sections/hero-1.tsx": $$$$$$21,
+    "site/sections/hero-2.tsx": $$$$$$22,
+    "site/sections/Hero.tsx": $$$$$$15,
+    "site/sections/hero2.tsx": $$$$$$23,
+    "site/sections/ImageWithParagraph.tsx": $$$$$$16,
+    "site/sections/Logos.tsx": $$$$$$17,
+    "site/sections/Testimonials.tsx": $$$$$$18,
+    "site/sections/Theme/Theme.tsx": $$$$$$19,
+    "site/sections/VideoSection.tsx": $$$$$$20,
   },
   "apps": {
     "site/apps/deco/vtex.ts": $$$$$$$$$$$0,
