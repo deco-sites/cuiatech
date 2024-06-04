@@ -1,31 +1,33 @@
 import { AppContext } from "site/apps/site.ts";
 import { Form } from "site/components/contact/ContactForm.tsx";
-import { SmtpResult } from "site/loaders/smtp.ts";
 
 export interface Props {
-  email: string;
   form: Form;
-  config: SmtpResult;
 }
 
-export default async function sendContactForm({ email, form, config }: Props, req: Request, ctx: AppContext) {
+export default async function sendContactForm(
+  { form }: Props,
+  req: Request,
+  ctx: AppContext,
+) {
+  const { smtp } = ctx.config;
   await ctx.invoke.site.actions.sendMail({
     config: {
-      hostname: config.hostname,
-      port: config.port,
-      tls: config.tls,
+      hostname: smtp.hostname,
+      port: smtp.port,
+      tls: smtp.tls,
       auth: {
-        username: config.auth.username,
-        password: config.auth.password,
-      }
+        username: smtp.auth.username,
+        password: smtp.auth.password,
+      },
     },
-    to: email,
+    to: smtp.targetEmail,
     subject: "Solicitação de contato CuiaTech",
     content: `<p>Nome: ${form.name}</p>
     <p>Empresa: ${form.enterprise}</p>
     <p>Email: ${form.email}</p>
     <p>Telefone: ${form.phone}</p>
     <p>Mensagem: ${form.message}</p>
-    `
+    `,
   }, req);
 }
