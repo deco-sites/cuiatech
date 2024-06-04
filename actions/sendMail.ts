@@ -7,7 +7,7 @@ export interface Props {
   subject: string;
   /** @format html */
   content: string;
-  config: SmtpResult;
+  config: Omit<SmtpResult, "targetEmail">;
 }
 
 export interface Result {
@@ -15,12 +15,16 @@ export interface Result {
   error?: unknown;
 }
 
-export default async function sendMail({
-  to,
-  subject,
-  content,
-  config,
-}: Props, _req: Request, _ctx: AppContext): Promise<Result> {
+export default async function sendMail(
+  {
+    to,
+    subject,
+    content,
+    config,
+  }: Props,
+  _req: Request,
+  _ctx: AppContext,
+): Promise<Result> {
   const client = new SMTPClient({
     connection: {
       hostname: config.hostname,
@@ -32,7 +36,7 @@ export default async function sendMail({
       },
     },
   });
- 
+
   try {
     await client.send({
       from: config.auth.username,
@@ -41,11 +45,11 @@ export default async function sendMail({
       content: "auto",
       html: content,
     });
-    
+
     await client.close();
     return { status: "ok" };
   } catch (error) {
     console.error(error);
-    return { status: "failure", error, };
+    return { status: "failure", error };
   }
 }
