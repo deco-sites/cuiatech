@@ -14,5 +14,6 @@
     }
   },
   "port": 465,
-  "tls": true
+  "tls": true,
+  "targetEmail": "joao@cuia.tech"
 }
