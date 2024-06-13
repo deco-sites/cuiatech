@@ -277,6 +277,7 @@
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "type": "website"
+    "type": "website",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/0c576ee6-d3b5-475a-9ae4-de88b2dd9303"
   }
 }
