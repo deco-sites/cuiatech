@@ -23,7 +23,7 @@ export default function OurValues({
       icon: (
         <Icon
           id="Diversity"
-          class="w-16"
+          class="w-20"
         />
       ),
       label: "Diversidade",

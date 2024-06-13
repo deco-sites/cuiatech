@@ -1,9 +1,18 @@
 import { App, AppContext as AC } from "deco/mod.ts";
-import website, { Props } from "apps/website/mod.ts";
+import website, { Props as WebSiteProps } from "apps/website/mod.ts";
 
 import manifest, { Manifest } from "../manifest.gen.ts";
+import { SmtpResult } from "site/loaders/smtp.ts";
 
 type WebsiteApp = ReturnType<typeof website>;
+
+export interface Config {
+  smtp: SmtpResult;
+}
+
+export interface Props extends WebSiteProps {
+  config: Config;
+}
 
 /**
  * @title Site

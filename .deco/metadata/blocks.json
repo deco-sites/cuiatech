@@ -132,5 +132,9 @@
   "/.deco/blocks/Preview%20site%2Floaders%2Fsmtp.ts.json": {
     "blockType": "loaders",
     "__resolveType": "site/loaders/smtp.ts"
+  },
+  "/.deco/blocks/Configura%C3%A7%C3%A3o%20SMTP.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/smtp.ts"
   }
 }

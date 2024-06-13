@@ -2,9 +2,10 @@ import { SiteNavigationElement } from "apps/commerce/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
 import Button from "site/components/ui/Button.tsx";
 import { Signal, useSignal } from "@preact/signals";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 interface Logo {
-  src: "LogoCuia" | "LogoCuia";
+  src: ImageWidget;
   alt: string;
   width?: number;
   height?: number;
@@ -21,23 +22,28 @@ export interface Props {
 
 export default function Component({ logo, iconButtons, navItems }: Props) {
   const signal = useSignal(false);
+  const width = globalThis.innerWidth;
 
   return (
     <>
       <div class="w-[90%] flex justify-between lg:justify-center items-center">
-        <Icon
-          id={logo.src}
+        <img
+          src={logo.src}
           alt={logo.alt}
-          size={logo.width}
-          strokeWidth={0.2}
-          fontWeight={600}
+          width={width < 500 ? 150 : logo.width}
         />
 
         <nav class={`w-[80%] lg:flex hidden items-center justify-center ml-5`}>
           <ul class={`flex lg:gap-7 xl:gap-10 items-center`}>
             {navItems?.map((node) => (
               <li class="hover:bg-primary hover:text-white hover:font-medium hover:scale-125 transition:all ease-in-out duration-300 px-6 py-2 rounded-md cursor-pointer lg:text-sm xl:text-[16px]">
-                <a href={node.url}>
+                <a
+                  href={
+                    node.name && node.name.toLowerCase() === "contato"
+                      ? "#contato"
+                      : node.url
+                  }
+                >
                   <span>{node.name}</span>
                 </a>
               </li>
@@ -90,7 +96,13 @@ export default function Component({ logo, iconButtons, navItems }: Props) {
             <ul class="flex flex-col gap-4">
               {navItems?.map((node) => (
                 <li class="hover:bg-primary hover:text-white hover:font-medium hover:scale-125 transition:all ease-in-out duration-300 px-6 py-2 rounded-md cursor-pointer lg:text-sm xl:text-[16px]">
-                  <a href={node.url}>
+                  <a
+                    href={
+                      node.name && node.name.toLowerCase() === "contato"
+                        ? "#contato"
+                        : node.url
+                    }
+                  >
                     <span>{node.name}</span>
                   </a>
                 </li>
