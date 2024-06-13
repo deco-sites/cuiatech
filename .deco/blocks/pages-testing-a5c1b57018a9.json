@@ -6,7 +6,8 @@
       "__resolveType": "site/sections/Content/CuiaHeader.tsx",
       "logo": {
         "alt": "Logo Cuia Tech",
-        "src": "LogoCuia"
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/a4d0da81-68f0-4bb8-acd1-1210c9b62dd2",
+        "width": 300
       },
       "iconButtons": [
         {
