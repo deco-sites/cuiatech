@@ -6,7 +6,8 @@
       "__resolveType": "site/sections/Content/CuiaHeader.tsx",
       "logo": {
         "alt": "Logo Cuia Tech",
-        "src": "LogoCuia"
+        "width": 300,
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/a4d0da81-68f0-4bb8-acd1-1210c9b62dd2"
       },
       "iconButtons": [
         {
@@ -41,20 +42,20 @@
         {
           "slideInfo": [
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
-              "imageDescription": "Web Front End"
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/7a375c66-32d1-46ba-96df-33104f02fa38",
+              "imageDescription": "Ideação & Discovery"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
-              "imageDescription": "Mobile"
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/cd5fe989-40be-45e4-ab84-86af9fa9eb1c",
+              "imageDescription": "Consultorias"
             },
             {
-              "imageDescription": "Web Backend",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0"
+              "imageDescription": "Desenvolvimento de soluções",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/897c383a-c64e-49cb-9b3b-fbcdca47a019"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
-              "imageDescription": "Infra"
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/cf66e790-3d41-4389-a8ba-a4019cda3f60",
+              "imageDescription": "Squad as a service"
             }
           ],
           "variant": "2",
@@ -64,19 +65,19 @@
         {
           "slideInfo": [
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/cdc4cdca-5c37-4a3c-923f-093619721010",
               "imageDescription": "Web Front End"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fa2201e5-01ea-4407-943d-99534b51024b",
               "imageDescription": "Web Backend"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/8ada64d1-7d9c-4018-8748-c127de8b0129",
               "imageDescription": "Mobile"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/1d0b2f15-8b03-4dee-956b-f18c271a2a22",
               "imageDescription": "Infra"
             }
           ],

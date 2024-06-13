@@ -1,8 +1,9 @@
 import { SiteNavigationElement } from "apps/commerce/types.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 import CuiaHeaderComponent from "site/islands/CuiaHeaderComponent/CuiaHeaderComponent.tsx";
 
 interface Logo {
-  src: "LogoCuia" | "LogoCuia";
+  src: ImageWidget;
   alt: string;
   width?: number;
   height?: number;
@@ -50,7 +51,10 @@ function CuiaHeader({
       url: "/",
     },
   ],
-  logo,
+  logo = {
+    src: "/static/image/logo.png",
+    alt: "Logo Cuia Tech",
+  },
   iconButtons = [
     {
       icon: "WhatsApp",
