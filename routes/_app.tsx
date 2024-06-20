@@ -24,6 +24,62 @@ export default defineApp(async (_req, ctx) => {
 
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+          @font-face {
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(${
+              asset("/fonts/futura/FuturaPTLight.otf")
+            } format('opentype');
+          }
+
+          @font-face {
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(${
+              asset("/fonts/futura/FuturaPTMedium.otf")
+            } format('opentype');
+          }
+
+          @font-face {
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('${
+              asset("/fonts/futura/FuturaPTBold.otf")
+            } format('opentype');
+          }
+
+          @font-face {
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(${
+              asset("/fonts/futura/FuturaPTHeavy.otf")
+            } format('opentype');
+          }
+
+          @font-face {
+            font-family: 'Futura';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(${
+              asset("/fonts/futura/FuturaPTExtraBold.otf")
+            } format('opentype');
+          }
+          `,
+          }}
+        />
       </Head>
 
       {/* Rest of Preact tree */}
