@@ -34,7 +34,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 300;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTLight.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTLight.otf")
+            } format('opentype');
           }
 
           @font-face {
@@ -42,7 +44,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTBook.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTBook.otf")
+            }) format('opentype');
           }
 
           @font-face {
@@ -50,7 +54,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 500;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTMedium.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTMedium.otf")
+            }) format('opentype');
           }
 
           @font-face {
@@ -58,7 +64,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTBold.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTBold.otf")
+            }) format('opentype');
           }
 
           @font-face {
@@ -66,7 +74,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 800;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTHeavy.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTHeavy.otf")
+            }) format('opentype');
           }
 
           @font-face {
@@ -74,7 +84,9 @@ export default defineApp(async (_req, ctx) => {
             font-style: normal;
             font-weight: 900;
             font-display: swap;
-            src: url('/fonts/futura/FuturaPTExtraBold.otf') format('opentype');
+            src: url(${
+              asset("/fonts/futura/FuturaPTExtraBold.otf")
+            }) format('opentype');
           }
           `,
           }}
