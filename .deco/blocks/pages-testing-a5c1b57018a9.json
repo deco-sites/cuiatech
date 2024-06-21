@@ -28,61 +28,71 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Content/MainBanner.tsx",
+      "__resolveType": "site/sections/Content/Banner.tsx",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/8f685116-5ac9-430a-8300-c6a2c32b9ca3",
+      "slogan": "Ponte que conecta ideias",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/17a8d5e4-8f39-4635-b05d-616792a25428",
+      "imageAlt": "Tecnologia para transformar"
+    },
+    {
+      "__resolveType": "site/sections/VideoSection.tsx",
+      "subtitle": "Suas ideias e informações precisam de um canal, de um elemento construtor, para se conectarem e consolidarem à Transformação Digital de sua empresa.",
+      "description": "E é exatamente isto que somos: uma ponte que conecta ideias, somos a PB Hub,  seu hub de soluções."
+    },
+    {
+      "__resolveType": "site/sections/Content/TecnologiesAndServices.tsx",
       "slides": [
         {
-          "slideInfo": [],
-          "variant": "1",
-          "firstSlide": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/0c576ee6-d3b5-475a-9ae4-de88b2dd9303",
-            "imageDescription": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/01fc4561-442f-4fe6-8ea0-0dbd617fb03a"
-          }
+          "slideInfo": [
+            {
+              "imageDescription": "Ideação & Discovery",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/1435c046-ca70-4b2a-94c6-906afe12140f"
+            },
+            {
+              "imageDescription": "Consultorias",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/c8960ad1-7329-4f12-9623-b19bc329d121"
+            },
+            {
+              "imageDescription": "Desenvolvimento de soluções",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/5cafd669-c446-4107-9fbf-a72c83db22ab"
+            },
+            {
+              "imageDescription": "Squad as a service",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/5446d489-9469-4e6a-bbcd-a9cba8b67354"
+            },
+            {
+              "imageDescription": "Squad as a service",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/5446d489-9469-4e6a-bbcd-a9cba8b67354"
+            },
+            {
+              "imageDescription": "Transformação digital",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a60c06a-d8f1-43e2-bf76-1568efb33cda"
+            }
+          ],
+          "title": "Soluções",
+          "subtitle": "Principais serviços oferecidos"
         },
         {
           "slideInfo": [
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
-              "imageDescription": "Web Front End"
+              "imageDescription": "Mobile",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
-              "imageDescription": "Mobile"
+              "imageDescription": "WEB Front End",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df"
             },
             {
-              "imageDescription": "Web Backend",
+              "imageDescription": "WEB Back End",
               "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0"
             },
             {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
-              "imageDescription": "Infra"
+              "imageDescription": "Infra",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4"
             }
           ],
-          "variant": "2",
-          "title": "Nossos Serviços",
-          "description": "Criação de valor a partir de novos conceitos e ideias"
-        },
-        {
-          "slideInfo": [
-            {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
-              "imageDescription": "Web Front End"
-            },
-            {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0",
-              "imageDescription": "Web Backend"
-            },
-            {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
-              "imageDescription": "Mobile"
-            },
-            {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
-              "imageDescription": "Infra"
-            }
-          ],
-          "variant": "3",
           "title": "Tecnologias",
-          "description": "Somos capacitados nas principais tecnologias de desenvolvimento de soluções digitais."
+          "subtitle": "Somos capacitados nas principais tecnologias de desenvolvimento de soluções digitais."
         }
       ]
     },
@@ -167,11 +177,25 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Content/ClientDepositions.tsx"
+      "__resolveType": "site/sections/Content/ClientDepositions.tsx",
+      "values": [
+        {
+          "text": "\"Ótimo atendimento e excelência em todas as etapas do processo. Somos muito gratos por essa parceria, dedicação e profissionalismo da equipe.\"",
+          "name": "Fábio",
+          "role": "Coordenador de TI da Fellipelli",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/1a9daed5-695d-4d08-b642-32b090bba3d9"
+        },
+        {
+          "text": "\"Ficou muito top, Eu particularmente gostei muito, um time dinâmico, extrovertido, paciente, muito paciente e focado voltado a solução. Quanto a qualidade de trabalho e entrega: Nota 10.\"       \"Código Bem estruturado, código leve, fácil de identificar eu abri o código de vocês aqui e consegui entender a estrutura de boa, então ele ta bem identado, consegui fazer alteração por aqui sem precisar incomodar vocês ai. Então Parabens amigo Excelente o trabalho de vocês. Tem a minha recomendação.\"",
+          "name": "Bruno Henrique",
+          "role": "Gerente de Tecnologia da Prospera Saúde",
+          "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/a7ac8b0f-299d-4891-8776-9b39f9e658a1"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Content/Ecosystem.tsx",
-      "numberOfProjects": "+30",
+      "numberOfProjects": "+110",
       "numberOfProfessionals": "+60",
       "headquarters": "<div class=\"card\"><div class=\"sede\"><strong><span class=\"sede-title\">JP|</span></strong>&nbsp;<span class=\"sede-description\">Base operacional de software e design house</span></div><div class=\"sede\"><strong><span class=\"sede-title\">SP|</span></strong>&nbsp;<span class=\"sede-description\">Comercial e desenvolvimento de novos negócios</span></div></div>",
       "selectedStates": [
@@ -180,7 +204,8 @@
         "SP",
         "PR",
         "SC"
-      ]
+      ],
+      "numberOfImpactatedPeoples": "+800"
     },
     {
       "__resolveType": "site/sections/Content/ColaboratorsDepositions.tsx",

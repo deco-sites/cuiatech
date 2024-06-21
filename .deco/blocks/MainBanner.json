@@ -1,0 +1,59 @@
+{
+  "__resolveType": "site/sections/Content/MainBanner.tsx",
+  "slides": [
+    {
+      "slideInfo": [],
+      "variant": "1",
+      "firstSlide": {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/0c576ee6-d3b5-475a-9ae4-de88b2dd9303",
+        "imageDescription": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/01fc4561-442f-4fe6-8ea0-0dbd617fb03a"
+      }
+    },
+    {
+      "slideInfo": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
+          "imageDescription": "Web Front End"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
+          "imageDescription": "Mobile"
+        },
+        {
+          "imageDescription": "Web Backend",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
+          "imageDescription": "Infra"
+        }
+      ],
+      "variant": "2",
+      "title": "Nossos Serviços",
+      "description": "Criação de valor a partir de novos conceitos e ideias"
+    },
+    {
+      "slideInfo": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/ca89a149-eb9f-4b1d-b4e1-c4df94c488df",
+          "imageDescription": "Web Front End"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/f455c678-269f-4fc6-b27b-fd6bfb2f60b0",
+          "imageDescription": "Web Backend"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/4a7a3f0a-b1d5-421d-8e60-5426ebba928e",
+          "imageDescription": "Mobile"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/fde9e32c-892b-4cbc-8d2d-84696738bed4",
+          "imageDescription": "Infra"
+        }
+      ],
+      "variant": "3",
+      "title": "Tecnologias",
+      "description": "Somos capacitados nas principais tecnologias de desenvolvimento de soluções digitais."
+    }
+  ]
+}

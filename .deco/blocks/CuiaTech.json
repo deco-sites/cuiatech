@@ -16,7 +16,9 @@
     "info": "#1E6D85",
     "success": "#58A23B"
   },
-  "font": {},
+  "font": {
+    "family": "Futura"
+  },
   "complementaryColors": {
     "secondary-content": "#3C3C3B",
     "primary-content": "#FFFFFF",
