@@ -308,6 +308,9 @@
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "type": "website"
+    "type": "website",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/70b358a1-863e-43bf-9444-fb740ea43903",
+    "title": "Cuia | Tecnologia para transformar",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/719bd4bc-657c-45b3-bb1d-c2f9b55530bf"
   }
 }
