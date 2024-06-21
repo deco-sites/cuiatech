@@ -25,6 +25,50 @@
           "icon": "Message",
           "url": "/"
         }
+      ],
+      "navItems": [
+        {
+          "children": [],
+          "image": [],
+          "name": "Home",
+          "url": "/",
+          "identifier": "home"
+        },
+        {
+          "children": [],
+          "image": [],
+          "identifier": "aboutus",
+          "name": "Sobre nós",
+          "url": "/"
+        },
+        {
+          "children": [],
+          "image": [],
+          "identifier": "services",
+          "name": "Serviços",
+          "url": "/"
+        },
+        {
+          "children": [],
+          "image": [],
+          "name": "Casos",
+          "identifier": "cases",
+          "url": "/"
+        },
+        {
+          "children": [],
+          "image": [],
+          "identifier": "blog",
+          "name": "Blog",
+          "url": "/"
+        },
+        {
+          "children": [],
+          "image": [],
+          "identifier": "contact",
+          "name": "Contato",
+          "url": "#contato"
+        }
       ]
     },
     {
