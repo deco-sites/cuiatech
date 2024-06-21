@@ -1,3 +1,4 @@
+import { ImageWidget } from "apps/admin/widgets.ts";
 import { ComponentChildren } from "https://esm.sh/v128/preact@10.19.2/src/index.js";
 
 interface HeaderProps {
@@ -38,16 +39,22 @@ function Container({ children }: ContainerProps) {
 }
 
 interface DepositionProps {
+  /**
+   * @format rich-text
+   */
   text: string;
   name: string;
   role: string;
-  avatar?: string;
+  avatar?: ImageWidget;
 }
 
 function Bubble({ text }: { text: string }) {
   return (
     <div class="bg-white p-6 rounded-badge chat-bubble">
-      <p class="text-sm font-thin text-accent">{text}</p>
+      <div
+        class="font-light text-base text-accent"
+        dangerouslySetInnerHTML={{ __html: text }}
+      />
     </div>
   );
 }
@@ -58,7 +65,7 @@ function Deposition({ text, name, role, avatar }: DepositionProps) {
       <Bubble text={text} />
       <div class="w-full flex gap-2 items-center justify-end mt-4">
         <div class="flex flex-col items-end">
-          <p class="text-white text-lg font-semibold">{name}</p>
+          <p class="text-white text-lg font-bold">{name}</p>
           <p class="text-white text-md font-light">{role}</p>
         </div>
         <Avatar src={avatar ?? ""} />

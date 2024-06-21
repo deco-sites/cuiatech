@@ -2,6 +2,7 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { SiteNavigationElement } from "apps/commerce/types.ts";
 import Button from "site/components/ui/Button.tsx";
 import Icon from "site/components/ui/Icon.tsx";
+import Menu from "site/islands/Menu.tsx";
 
 interface Logo {
   src: "LogoCuia" | "LogoCuia";
@@ -56,7 +57,8 @@ function CuiaHeader({
   iconButtons = [
     {
       icon: "WhatsApp",
-      url: "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0",
+      url:
+        "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0",
     },
     {
       icon: "Instagram",
@@ -74,17 +76,18 @@ function CuiaHeader({
 }: Props) {
   return (
     <header class="max-h-[140px] w-full flex items-center justify-center p-4 ">
-      <div class="w-[90%] flex justify-center items-center">
+      <Menu navItems={navItems} />
+      <div class="w-[90%] flex flex-col mlg:flex-row justify-center items-center">
         <Icon
           id={logo.src}
           alt={logo.alt}
           size={logo.width}
           strokeWidth={0.2}
           fontWeight={600}
+          class="max-w-24 xl:max-w-20"
         />
-
-        <nav class={`w-[80%] lg:flex hidden items-center justify-center ml-5`}>
-          <ul class={`flex lg:gap-7 xl:gap-10 items-center`}>
+        <nav class={`w-[80%] mlg:flex hidden items-center justify-center ml-5`}>
+          <ul class={`flex lg:gap-3 xl:gap-7 items-center`}>
             {navItems?.map((node) => (
               <li class="hover:bg-primary hover:text-white hover:font-medium hover:scale-125 transition:all ease-in-out duration-300 px-6 py-2 rounded-md cursor-pointer lg:text-sm xl:text-[16px]">
                 <a href={node.url}>
@@ -94,7 +97,6 @@ function CuiaHeader({
             ))}
           </ul>
         </nav>
-
         <div class="lg:flex hidden items-center lg:gap-2">
           {iconButtons.map((button) => (
             <>

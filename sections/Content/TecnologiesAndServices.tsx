@@ -2,9 +2,9 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import SolutionsSlider from "site/islands/SolutionsSlider/SolutionsSlider.tsx";
 
 export type Slide = {
-  title: string;
-  subtitle: string;
-  slideInfo: {
+  title?: string;
+  subtitle?: string;
+  slideInfo?: {
     imageDescription: string;
     image: ImageWidget;
   }[];

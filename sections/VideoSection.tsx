@@ -1,47 +1,44 @@
 export interface Props {
-  subtitle: string;
-  description: string;
-  urlSource: string;
-  width: string;
-  height: string;
+  subtitle?: string;
+  description?: string;
+  urlSource?: string;
+  width?: string;
+  height?: string;
 }
 
 export default function ConnectingBridges({
   subtitle,
   description,
   urlSource,
-  width = "500",
-  height = "300"
+  width = "600",
+  height = "300",
 }: Props) {
   return (
-    <section class="w-full py-[20px] px-[20px] items-center md:px-[30px] md:py-[60px] flex flex-col md:flex-row md:justify-center md:gap-[40px] gap-[20px] bg-gray-100">
-      <div class="flex flex-col md:items-start md:w-[50%] w-full gap-[15px] md:gap-[30px]">
-        <div class="2xl:w-[70%]">
-          <h2 class="text-3xl md:text-[42px] text-primary-550 font-sans text-center md:text-start leading-[48px]">
-            SOMOS{" "}
-            <strong class="text-3xl md:text-[42px] text-primary-550 font-sans ">
-              PONTE
-            </strong>{" "}
-            QUE{" "}
-            <strong class="text-3xl md:text-[42px] text-primary-550 font-sans ">
-              CONECTA IDEIAS
-            </strong>
-          </h2>
+    <section class="w-full bg-base-200">
+      <div class="max-w-7xl mx-auto py-4 px-4 items-center md:px-6 md:py-16 flex flex-col md:flex-row md:justify-center md:gap-10 gap-5">
+        <div class="flex flex-col md:items-start w-full md:w-1/2 gap-4 md:gap-6">
+          <div class="font-futura text-3xl md:text-4xl">
+            <div class="text-secondary-content text-center md:text-start leading-10">
+              <h2>
+                SOMOS <strong>PONTE</strong> QUE
+              </h2>
+              <h2>
+                <strong>
+                  CONECTA IDEIAS
+                </strong>
+              </h2>
+            </div>
+          </div>
+          <div class="font-futura flex flex-col md:flex-col gap-3 w-full md:text-base text-secondary-content xl:w-10/12">
+            {subtitle && <p>{subtitle}</p>}
+            {description && <p>{description}</p>}
+          </div>
         </div>
-
-        <div class="flex flex-col md:flex-col gap-[10px] w-full xl:w-[65%] 2xl:w-[60%]">
-          {subtitle && <p class="md:text-[16px] text-primary-550">{subtitle}
-          </p>}
-          {description && (
-            <p class="md:text-[16px] text-primary-550">{description}</p>
-          )}
-        </div>
+        <video width={width} height={height} controls>
+          <source src={urlSource} type="" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-
-      <video width={width} height={height} controls>
-        <source src={urlSource} type="" />
-        Your browser does not support the video tag.
-      </video>
     </section>
   );
 }
