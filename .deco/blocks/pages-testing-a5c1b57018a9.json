@@ -229,6 +229,16 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Content/Separator.tsx",
+      "direction": "top",
+      "variant": "accent",
+      "smooth": true
+    },
+    {
+      "__resolveType": "site/sections/Content/ContactForm.tsx",
+      "title": "Fale conosco"
+    },
+    {
       "__resolveType": "site/sections/Content/Blog.tsx",
       "title": "Blog",
       "blogs": [
@@ -251,6 +261,12 @@
           "alt": "WEB"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Content/Separator.tsx",
+      "direction": "top",
+      "variant": "primary",
+      "smooth": true
     },
     {
       "__resolveType": "site/sections/Content/CuiaFooter.tsx",
