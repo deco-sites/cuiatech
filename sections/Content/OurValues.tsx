@@ -91,7 +91,7 @@ interface CardProps {
 function Card({ label, icon }: CardProps) {
   return (
     <div class="xl:relative w-full flex flex-col align-middle items-center justify-center xl:justify-normal h-64 sm:h-48 p-4 bg-primary rounded-badge shadow-md">
-      <p class="mt-2 text-lg font-semibold text-secondary">
+      <p class="mt-12 xl:mt-2 text-lg text-secondary font-extrabold">
         {label}
       </p>
       <div class="xl:absolute xl:mt-8 mt-2 flex flex-col items-center justify-center">

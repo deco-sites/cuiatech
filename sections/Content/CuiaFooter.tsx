@@ -30,7 +30,8 @@ export default function CuiaFooter({
   social = [
     {
       icon: "WhatsApp",
-      url: "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0",
+      url:
+        "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0",
     },
     {
       icon: "Instagram",
@@ -52,11 +53,7 @@ export default function CuiaFooter({
   const socialContent = social.map((item, index) => (
     <a
       href={item.url}
-      style={{
-        color: "white",
-        fontWeight: "bold",
-      }}
-      class="hover:scale-125"
+      class="hover:scale-125 text-primary-content font-bold"
     >
       <Icon
         id={item.icon}
@@ -86,24 +83,22 @@ export default function CuiaFooter({
       <div
         class="mb-6 last:mb-0"
         style={{
-          fontFamily: '"Open Sans", sans-serif',
           fontSize: `${baseContact.textFontSize}px`,
           fontWeight: baseContact.textFontWeight,
           textAlign: baseContact.textAlign,
         }}
       >
-        <p style={{ color: "white" }}>{baseContact.text}</p>
+        <p class="text-primary-content">{baseContact.text}</p>
       </div>
       <div class="flex justify-center space-x-8 mb-6">{socialContent}</div>
       <div
         style={{
-          fontFamily: '"Open Sans", sans-serif',
           fontSize: `${baseText.textFontSize}px`,
           fontWeight: baseText.textFontWeight,
           textAlign: baseText.textAlign,
         }}
       >
-        <p style={{ color: "white" }}>{baseText.text}</p>
+        <p class="text-primary-content">{baseText.text}</p>
       </div>
     </div>
   );

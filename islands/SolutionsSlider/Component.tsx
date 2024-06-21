@@ -2,9 +2,9 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import { Signal, useSignal } from "@preact/signals";
 
 export type Slide = {
-  title: string;
-  subtitle: string;
-  slideInfo: {
+  title?: string;
+  subtitle?: string;
+  slideInfo?: {
     imageDescription: string;
     image: ImageWidget;
   }[];
@@ -46,33 +46,35 @@ export default function Component({ slides }: Props) {
             </div>
 
             <div class="flex justify-around items-center w-full mt-5 sm:mt-0 pb-2">
-              {items.slideInfo.map((image, index) => (
-                <div
-                  id="image-container"
-                  class={`flex flex-col gap-4 items-center justify-center ${
-                    index === 3 ? "hidden" : "sm:flex"
-                  } last:hidden md:last:flex`}
-                >
-                  <div class="md:max-w-[120px] max-w-[70px] flex flex-col flex-wrap items-center justify-center gap-2">
-                    <img
-                      src={image.image}
-                      width={image.imageDescription === "Mobile" ? 34 : 60}
-                      height={image.imageDescription === "Mobile" ? 30 : 60}
-                    />
+              {items.slideInfo?.map((image, index) => {
+                return (
+                  <div
+                    id="image-container"
+                    class={`flex flex-col gap-4 items-center justify-center ${
+                      index === 3 ? "hidden" : "sm:flex"
+                    } last:hidden md:last:flex`}
+                  >
+                    <div class="md:max-w-[120px] max-w-[70px] flex flex-col flex-wrap items-center justify-center gap-2">
+                      <img
+                        src={image.image}
+                        width={image.imageDescription === "Mobile" ? 34 : 60}
+                        height={image.imageDescription === "Mobile" ? 30 : 60}
+                      />
 
-                    <span class="text-[16px] md:text-[20px] text-accent text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
-                      {image.imageDescription}
-                    </span>
+                      <span class="text-base md:text-xl text-accent text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
+                        {image.imageDescription}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 mb-4 ">
               <a
                 className="btn btn-ghost hover:text-white  border-0 hover:bg-primary"
                 onClick={scrollToSlide(
                   current.value - 1 < 0 ? slides.length - 1 : current.value - 1,
-                  current
+                  current,
                 )}
               >
                 ❮
@@ -81,7 +83,7 @@ export default function Component({ slides }: Props) {
                 className="btn btn-ghost  hover:text-white border-0 hover:bg-primary"
                 onClick={scrollToSlide(
                   current.value + 1 >= slides.length ? 0 : current.value + 1,
-                  current
+                  current,
                 )}
               >
                 ❯

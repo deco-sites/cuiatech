@@ -25,7 +25,7 @@ export default function Blog(props: Props) {
 
   const blogsContent = Array.isArray(blogs) && blogs.length > 0
     ? (
-      <div class="flex justify-center mt-8 mb-8">
+      <div class="flex justify-center mt-8 mb-8 bg-base-200">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {blogs.slice(0, 3).map((item, index) => (
             <div>
@@ -34,22 +34,22 @@ export default function Blog(props: Props) {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block hover:scale-110 transition-transform duration-300 overflow-hidden m-4 shadow-lg rounded-lg bg-white p-6"
+                class="block hover:scale-105 transition-transform duration-300 overflow-hidden m-4"
               >
                 <img
                   src={item.src}
                   alt={item.alt}
-                  class="w-full h-auto object-cover rounded-lg"
+                  class="w-full h-auto object-cover shadow-lg"
                 />
-                <p class="text-secondary-content text-center font-semibold p-2">
+                <p class="text-secondary-content text-center font-normal px-2 py-4">
                   {item.description}
                 </p>
               </a>
-              <div class="btn w-24 bg-primary">
+              <div class="btn w-24 bg-primary font-normal">
                 <a
                   href={item.href}
                   target="_blank"
-                  class="text-white"
+                  class="text-primary-content"
                 >
                   Ler mais
                 </a>
