@@ -29,5 +29,22 @@
   "firstByteThresholdMS": false,
   "theme": {
     "__resolveType": "CuiaTech"
+  },
+  "config": {
+    "smtp": {
+      "__resolveType": "Configuração SMTP"
+    }
+  },
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  },
+  "errorPage": {
+    "name": "Elysson Marconi"
   }
 }
