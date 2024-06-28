@@ -1,4 +1,7 @@
 export interface Props {
+  /**
+   * @format rich-text
+   */
   title?: string;
   subtitle?: string;
   description?: string;
