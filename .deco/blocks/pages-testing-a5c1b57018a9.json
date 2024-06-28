@@ -81,7 +81,8 @@
     {
       "__resolveType": "site/sections/VideoSection.tsx",
       "subtitle": "Suas ideias e informações precisam de um canal, de um elemento construtor, para se conectarem e consolidarem à Transformação Digital de sua empresa.",
-      "description": "E é exatamente isto que somos: uma ponte que conecta ideias, somos a PB Hub,  seu hub de soluções."
+      "description": "E é exatamente isto que somos: uma ponte que conecta ideias, somos a PB Hub,  seu hub de soluções.",
+      "title": "<h2><strong>TECNOLOGIA</strong> PARA<br><strong>TRANSFORMAR</strong></h2>"
     },
     {
       "__resolveType": "site/sections/Content/TecnologiesAndServices.tsx",
