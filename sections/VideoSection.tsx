@@ -1,4 +1,5 @@
 export interface Props {
+  title?: string;
   subtitle?: string;
   description?: string;
   urlSource?: string;
@@ -7,6 +8,7 @@ export interface Props {
 }
 
 export default function ConnectingBridges({
+  title,
   subtitle,
   description,
   urlSource,
@@ -19,14 +21,7 @@ export default function ConnectingBridges({
         <div class="flex flex-col md:items-start w-full md:w-1/2 gap-4 md:gap-6">
           <div class="font-futura text-3xl md:text-4xl">
             <div class="text-secondary-content text-center md:text-start leading-10">
-              <h2>
-                SOMOS <strong>PONTE</strong> QUE
-              </h2>
-              <h2>
-                <strong>
-                  CONECTA IDEIAS
-                </strong>
-              </h2>
+              {title}
             </div>
           </div>
           <div class="font-futura flex flex-col md:flex-col gap-3 w-full md:text-base text-secondary-content xl:w-10/12">
