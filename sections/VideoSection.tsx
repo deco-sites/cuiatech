@@ -23,7 +23,13 @@ export default function ConnectingBridges({
       <div class="max-w-7xl mx-auto py-4 px-4 items-center md:px-6 md:py-16 flex flex-col md:flex-row md:justify-center md:gap-10 gap-5">
         <div class="flex flex-col md:items-start w-full md:w-1/2 gap-4 md:gap-6">
           <div class="font-futura text-3xl md:text-4xl">
-            <div class="text-secondary-content text-center md:text-start leading-10">
+            <div
+              class="text-secondary-content text-center md:text-start leading-10"
+              dangerouslySetInnerHTML={{
+                __html: title ||
+                  "<h2><strong>TECNOLOGIA</strong> PARA <strong>TRANSFORMAR</strong</h2>",
+              }}
+            >
               {title}
             </div>
           </div>
