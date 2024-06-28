@@ -32,7 +32,7 @@ export default function Component({ slides }: Props) {
             className="btn btn-ghost text-warning text-2xl"
             onClick={scrollToSlide(
               current.value - 1 < 0 ? slides.length - 1 : current.value - 1,
-              current
+              current,
             )}
           >
             ❮
@@ -41,7 +41,7 @@ export default function Component({ slides }: Props) {
             className="btn btn-ghost text-warning text-2xl"
             onClick={scrollToSlide(
               current.value + 1 >= slides.length ? 0 : current.value + 1,
-              current
+              current,
             )}
           >
             ❯
@@ -53,9 +53,11 @@ export default function Component({ slides }: Props) {
               id={"slide-oc" + index}
               className="carousel-item relative w-full"
             >
-              <div class="flex justify-around items-center w-full px-10">
+              <div class="flex flex-col justify-around items-center w-full px-16 sm:flex-row">
                 {images.map((image) => (
-                  <img src={image.image} className="w-32" />
+                  <div class="w-32">
+                    <img src={image.image} className="w-full" />
+                  </div>
                 ))}
               </div>
             </div>

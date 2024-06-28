@@ -26,7 +26,7 @@ export default function Deposition(
   const isExpanded = useSignal(false);
   return (
     <div
-      class={`relative flex items-center p-12 pb-16 mb-16 w-full sm:w-[32rem] ${
+      class={`relative flex items-center p-12 pb-16 mb-16 w-full min-w-60 sm:w-[32rem] ${
         COLORS[color]
       } rounded-3xl`}
     >
@@ -48,7 +48,7 @@ export default function Deposition(
         {isExpanded.value ? "Ler menos..." : "Ler mais..."}
       </div>
       <img
-        className="absolute w-28 rounded-full -bottom-16 right-12 z-10"
+        className="absolute w-20 sm:w-28 rounded-full -bottom-10 right-3 sm:-bottom-16 sm:right-12 z-10"
         src={image}
       />
     </div>
