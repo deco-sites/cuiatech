@@ -45,22 +45,19 @@ export default function Component({ slides }: Props) {
               </p>
             </div>
 
-            <div class="flex justify-around items-center w-full mt-5 sm:mt-0 pb-2">
+            <div class="flex flex-col justify-around items-center w-full mt-5 sm:mt-0 pb-2 space-y-8 sm:space-y-0 sm:flex-row">
               {items.slideInfo?.map((image, index) => {
                 return (
                   <div
                     id="image-container"
-                    class={`flex flex-col gap-4 items-center justify-center ${
-                      index === 3 ? "hidden" : "sm:flex"
-                    } last:hidden md:last:flex`}
+                    class={`flex flex-col items-center justify-center`}
                   >
-                    <div class="md:max-w-[120px] max-w-[70px] flex flex-col flex-wrap items-center justify-center gap-2">
+                    <div class="md:max-w-[120px] max-w-[70px] flex flex-col items-center justify-center">
                       <img
                         src={image.image}
                         width={image.imageDescription === "Mobile" ? 34 : 60}
                         height={image.imageDescription === "Mobile" ? 30 : 60}
                       />
-
                       <span class="text-base md:text-xl text-accent text-center font-bold leading-[16px] md:leading-[20px] mt-[10px]">
                         {image.imageDescription}
                       </span>
