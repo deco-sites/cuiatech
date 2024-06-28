@@ -3,73 +3,7 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/Content/CuiaHeader.tsx",
-      "logo": {
-        "alt": "Logo Cuia Tech",
-        "src": "LogoCuia"
-      },
-      "iconButtons": [
-        {
-          "icon": "WhatsApp",
-          "url": "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0"
-        },
-        {
-          "icon": "Instagram",
-          "url": "https://www.instagram.com/cuia.tech?igsh=N2plMXhwb3dpbzdt"
-        },
-        {
-          "icon": "Linkedin",
-          "url": "https://www.linkedin.com/company/cuiatech/about/?viewAsMember=true"
-        },
-        {
-          "icon": "Message",
-          "url": "/"
-        }
-      ],
-      "navItems": [
-        {
-          "children": [],
-          "image": [],
-          "name": "Home",
-          "url": "/",
-          "identifier": "home"
-        },
-        {
-          "children": [],
-          "image": [],
-          "identifier": "aboutus",
-          "name": "Sobre nós",
-          "url": "/"
-        },
-        {
-          "children": [],
-          "image": [],
-          "identifier": "services",
-          "name": "Serviços",
-          "url": "/"
-        },
-        {
-          "children": [],
-          "image": [],
-          "name": "Casos",
-          "identifier": "cases",
-          "url": "/"
-        },
-        {
-          "children": [],
-          "image": [],
-          "identifier": "blog",
-          "name": "Blog",
-          "url": "/"
-        },
-        {
-          "children": [],
-          "image": [],
-          "identifier": "contact",
-          "name": "Contato",
-          "url": "#contato"
-        }
-      ]
+      "__resolveType": "Header"
     },
     {
       "__resolveType": "site/sections/Content/Banner.tsx",
@@ -306,40 +240,7 @@
       "smooth": true
     },
     {
-      "__resolveType": "site/sections/Content/CuiaFooter.tsx",
-      "logo": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/3e131546-87a8-4ebf-af1d-51880964dfb1",
-        "alt": "Logo from cuia"
-      },
-      "baseText": {
-        "textAlign": "center",
-        "textFontSize": 14,
-        "text": "© 2021-2024 PB Hub Serviços em Tecnologia LTDA | CNPJ: 34.905.548/0001-00. "
-      },
-      "baseContact": {
-        "textAlign": "center",
-        "textFontSize": 14,
-        "text": "São Paulo: +55 11 9898.33697"
-      },
-      "social": [
-        {
-          "alt": "WhatsApp",
-          "icon": "WhatsApp",
-          "url": "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0"
-        },
-        {
-          "icon": "Instagram",
-          "url": "https://www.instagram.com/pbhubsolucoes/"
-        },
-        {
-          "icon": "Linkedin",
-          "url": "https://www.linkedin.com/company/pbhubsolucoes"
-        },
-        {
-          "icon": "Message",
-          "url": "/"
-        }
-      ]
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

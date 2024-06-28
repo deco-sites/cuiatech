@@ -1,1 +1,36 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[],"subscribe":{}}
+{
+  "__resolveType": "site/sections/Content/CuiaFooter.tsx",
+  "social": [
+    {
+      "alt": "WhatsApp",
+      "icon": "WhatsApp",
+      "url": "https://api.whatsapp.com/send/?phone=5511989833697&text&type=phone_number&app_absent=0"
+    },
+    {
+      "icon": "Instagram",
+      "url": "https://www.instagram.com/pbhubsolucoes/"
+    },
+    {
+      "icon": "Linkedin",
+      "url": "https://www.linkedin.com/company/pbhubsolucoes"
+    },
+    {
+      "icon": "Message",
+      "url": "/"
+    }
+  ],
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10366/3e131546-87a8-4ebf-af1d-51880964dfb1",
+    "alt": "Logo from cuia"
+  },
+  "baseText": {
+    "textAlign": "center",
+    "textFontSize": 14,
+    "text": "© 2021-2024 PB Hub Serviços em Tecnologia LTDA | CNPJ: 34.905.548/0001-00. "
+  },
+  "baseContact": {
+    "textAlign": "center",
+    "textFontSize": 14,
+    "text": "São Paulo: +55 11 9898.33697"
+  }
+}
