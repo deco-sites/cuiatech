@@ -27,7 +27,7 @@ export default function ConnectingBridges({
               class="text-secondary-content text-center md:text-start leading-10"
               dangerouslySetInnerHTML={{
                 __html: title ||
-                  "<h2><strong>TECNOLOGIA</strong> PARA <strong>TRANSFORMAR</strong</h2>",
+                  "<h2><strong>TECNOLOGIA</strong> PARA <strong>TRANSFORMAR</strong></h2>",
               }}
             >
               {title}
